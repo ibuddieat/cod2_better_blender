@@ -342,7 +342,7 @@ def save(self, context, filepath,
 
         for ob in bpy.data.objects:
             if ob.type == 'MESH':
-                context.scene.objects.active = ob
+                context.view_layer.objects.active = ob
                 break
         else:
             return "No mesh to export."
