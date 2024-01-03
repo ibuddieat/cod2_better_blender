@@ -237,8 +237,6 @@ class ExportMesh(object):
 
         if self.mesh.has_custom_normals:
             self.mesh.calc_normals_split()
-        else:
-            self.mesh.calc_normals()
 
         uv_layer = self.mesh.uv_layers.active
         vc_layer = self.mesh.vertex_colors.active
